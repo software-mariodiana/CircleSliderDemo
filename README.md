@@ -2,7 +2,7 @@
 
 Demonstrate the usage of MDXCircleProgressView class. 
 
-The class provides a progress view similar in functionality to UIProgressView, but in circular form. It is designed to be simple to use with sensible defaults.
+The class provides a progress view similar in functionality to UIProgressView, but in circular form. It is designed to be simple to use with sensible defaults. The class works with Interface Builder.
 
 The project is written in Objective-C.
 
