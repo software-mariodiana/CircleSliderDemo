@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ADe-cT-dEC" customClass="MDXCircleProgressView">
+                                <rect key="frame" x="20" y="261" width="374" height="374"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ADe-cT-dEC" secondAttribute="height" multiplier="1:1" id="cFN-bd-oCu"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="progress">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="6PA-sN-H8o">
+                                <rect key="frame" x="18" y="824" width="378" height="31"/>
+                                <connections>
+                                    <action selector="sliderUpdatedValue:" destination="BYZ-38-t0r" eventType="valueChanged" id="1e4-1O-93j"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6PA-sN-H8o" secondAttribute="bottom" constant="8" id="4P3-oH-g2d"/>
+                            <constraint firstItem="ADe-cT-dEC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="73N-fi-y5r"/>
+                            <constraint firstItem="6PA-sN-H8o" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="D8q-OR-ABS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ADe-cT-dEC" secondAttribute="trailing" constant="20" id="Pcr-PO-5hW"/>
+                            <constraint firstItem="ADe-cT-dEC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="SaY-9s-BdA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6PA-sN-H8o" secondAttribute="trailing" constant="20" id="c6G-36-tho"/>
+                            <constraint firstItem="ADe-cT-dEC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="nBT-rk-ZMd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="circleProgressView" destination="ADe-cT-dEC" id="6rY-VZ-KJo"/>
+                        <outlet property="slider" destination="6PA-sN-H8o" id="w1I-xP-1SN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140.57971014492756" y="120.53571428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
