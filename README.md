@@ -4,6 +4,8 @@ Demonstrate the usage of MDXCircleProgressView class.
 
 The class provides a progress view similar in functionality to UIProgressView, but in circular form. It is designed to be simple to use with sensible defaults.
 
+The project is written in Objective-C.
+
 ### Getting Started ###
 
 Run the project, and play around either in Interface Builder or the ViewController.m file. The progress color and track color may be changed either manually or via the UIAppearance protocol. Progress is updated manually via the progress property, or by using an NSProgress object via the observedProgress property.
