@@ -10,9 +10,9 @@ The project is written in Objective-C.
 
 Run the project, and play around either in Interface Builder or the ViewController.m file. The progress color and track color may be changed either manually or via the UIAppearance protocol. Progress is updated manually via the progress property, or by using an NSProgress object via the observedProgress property.
 
-** MDXCircleProgressView.h **
-
 ```objectivec
+// FILE: MDXCircleProgressView.h
+
 #import <UIKit/UIKit.h>
 
 @interface MDXCircleProgressView : UIView <NSCoding>
